@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.learnjava.restApi;
+package com.learnjava.spring.test.learnjava.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
