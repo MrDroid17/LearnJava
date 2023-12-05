@@ -1,6 +1,6 @@
-package com.learnjava.spring.test.learnjava.components;
+package com.learnjava.spring.test.utils.components;
 
-import com.learnjava.spring.test.learnjava.interfaces.Coach;
+import com.learnjava.spring.test.utils.interfaces.Coach;
 import org.springframework.stereotype.Component;
 
 @Component
