@@ -1,6 +1,6 @@
 package com.learnjava.spring.test.learnjava.controllers;
 
-import com.learnjava.spring.test.utils.interfaces.Coach;
+import com.learnjava.spring.test.learnjava.interfaces.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class CricketDemoController {
     private Coach myCoach;
 
+//    @Autowired
+//    public CricketDemoController(Coach myCoach) {
+//        this.myCoach = myCoach;
+//    }
+
     @Autowired
-    public CricketDemoController(Coach myCoach) {
+    public void getSetter(Coach myCoach){
         this.myCoach = myCoach;
     }
 

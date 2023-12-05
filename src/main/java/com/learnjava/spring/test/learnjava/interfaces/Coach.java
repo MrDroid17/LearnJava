@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.utils.interfaces;
+package com.learnjava.spring.test.learnjava.interfaces;
 
 public interface Coach {
 
