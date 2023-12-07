@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-    public HelloWorldController(){
+    public HelloWorldController() {
         System.out.println("In Constructor: " + getClass().getSimpleName());
     }
+
     @Value("${coach.name}")
     private String coachName;
 
@@ -17,22 +18,18 @@ public class HelloWorldController {
 
 
     @GetMapping("/teaminfo")
-    public String getTeamInfo(){
+    public String getTeamInfo() {
         return "Coach Name: " + coachName + "\n Team Name : " + teamName;
     }
 
     @GetMapping("/")
-    public String sayHello(){
+    public String sayHello() {
         return "Hello World";
     }
 
     @GetMapping("/test")
-    public String testMessage(){
+    public String testMessage() {
         return "This is a test method";
     }
 
-    @GetMapping("/workout")
-    public String runForHealth(){
-        return "Running....";
-    }
 }
