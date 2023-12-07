@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
+    public HelloWorldController(){
+        System.out.println("In Constructor: " + getClass().getSimpleName());
+    }
     @Value("${coach.name}")
     private String coachName;
 
