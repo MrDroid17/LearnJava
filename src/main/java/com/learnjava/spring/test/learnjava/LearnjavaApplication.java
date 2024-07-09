@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 //)
 
 @SpringBootApplication
-public class LearnjavaApplication {
+public class  LearnjavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LearnjavaApplication.class, args);

@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.learnjava.entity;
+package com.learnjava.spring.test.CRUDdemo.entity;
 
 import jakarta.persistence.*;
 import org.springframework.context.annotation.Primary;
