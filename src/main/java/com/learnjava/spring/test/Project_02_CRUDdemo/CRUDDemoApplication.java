@@ -1,7 +1,7 @@
-package com.learnjava.spring.test.CRUDdemo;
+package com.learnjava.spring.test.Project_02_CRUDdemo;
 
-import com.learnjava.spring.test.CRUDdemo.DAO.StudentDAO;
-import com.learnjava.spring.test.CRUDdemo.entity.Student;
+import com.learnjava.spring.test.Project_02_CRUDdemo.DAO.StudentDAO;
+import com.learnjava.spring.test.Project_02_CRUDdemo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

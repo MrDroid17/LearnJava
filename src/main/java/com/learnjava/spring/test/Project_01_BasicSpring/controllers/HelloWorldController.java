@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.learnjava.controllers;
+package com.learnjava.spring.test.Project_01_BasicSpring.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

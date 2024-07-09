@@ -1,9 +1,6 @@
-package com.learnjava.spring.test.CRUDdemo.entity;
+package com.learnjava.spring.test.Project_02_CRUDdemo.entity;
 
 import jakarta.persistence.*;
-import org.springframework.context.annotation.Primary;
-
-import java.sql.Array;
 
 @Entity
 @Table(name = "student")

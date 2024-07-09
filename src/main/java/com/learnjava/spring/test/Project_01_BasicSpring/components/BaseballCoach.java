@@ -1,8 +1,7 @@
-package com.learnjava.spring.test.learnjava.components;
+package com.learnjava.spring.test.Project_01_BasicSpring.components;
 
-import com.learnjava.spring.test.learnjava.interfaces.Coach;
+import com.learnjava.spring.test.Project_01_BasicSpring.interfaces.Coach;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component

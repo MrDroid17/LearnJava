@@ -1,8 +1,6 @@
-package com.learnjava.spring.test.learnjava.controllers;
+package com.learnjava.spring.test.Project_01_BasicSpring.controllers;
 
-import com.learnjava.spring.test.learnjava.interfaces.Coach;
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
+import com.learnjava.spring.test.Project_01_BasicSpring.interfaces.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;

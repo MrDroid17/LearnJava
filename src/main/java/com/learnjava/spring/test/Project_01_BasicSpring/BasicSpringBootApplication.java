@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.learnjava;
+package com.learnjava.spring.test.Project_01_BasicSpring;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 //)
 
 @SpringBootApplication
-public class  LearnjavaApplication {
+public class BasicSpringBootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LearnjavaApplication.class, args);
+		SpringApplication.run(BasicSpringBootApplication.class, args);
 	}
 
 	@Bean

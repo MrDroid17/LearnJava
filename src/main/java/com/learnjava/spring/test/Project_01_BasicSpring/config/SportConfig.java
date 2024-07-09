@@ -1,7 +1,7 @@
-package com.learnjava.spring.test.learnjava.config;
+package com.learnjava.spring.test.Project_01_BasicSpring.config;
 
-import com.learnjava.spring.test.learnjava.components.SwimCoach;
-import com.learnjava.spring.test.learnjava.interfaces.Coach;
+import com.learnjava.spring.test.Project_01_BasicSpring.components.SwimCoach;
+import com.learnjava.spring.test.Project_01_BasicSpring.interfaces.Coach;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

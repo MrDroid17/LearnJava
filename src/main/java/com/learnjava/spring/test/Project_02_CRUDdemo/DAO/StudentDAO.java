@@ -1,6 +1,6 @@
-package com.learnjava.spring.test.CRUDdemo.DAO;
+package com.learnjava.spring.test.Project_02_CRUDdemo.DAO;
 
-import com.learnjava.spring.test.CRUDdemo.entity.Student;
+import com.learnjava.spring.test.Project_02_CRUDdemo.entity.Student;
 import java.util.List;
 
 public interface StudentDAO {

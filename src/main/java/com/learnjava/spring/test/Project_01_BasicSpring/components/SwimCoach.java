@@ -1,6 +1,6 @@
-package com.learnjava.spring.test.learnjava.components;
+package com.learnjava.spring.test.Project_01_BasicSpring.components;
 
-import com.learnjava.spring.test.learnjava.interfaces.Coach;
+import com.learnjava.spring.test.Project_01_BasicSpring.interfaces.Coach;
 
 public class SwimCoach implements Coach {
 
