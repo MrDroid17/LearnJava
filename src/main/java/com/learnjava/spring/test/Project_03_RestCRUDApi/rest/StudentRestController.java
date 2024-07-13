@@ -1,10 +1,7 @@
 package com.learnjava.spring.test.Project_03_RestCRUDApi.rest;
 
 import com.learnjava.spring.test.Project_03_RestCRUDApi.entity.Student;
-<<<<<<< HEAD
-=======
 import com.learnjava.spring.test.Project_03_RestCRUDApi.entity.StudentNotFoundException;
->>>>>>> a70b5213e470948d8d38834696b9943411059184
 import jakarta.annotation.PostConstruct;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
