@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.Project_05_CRUD_Employee_Spring_data_JPA;
+package com.learnjava.spring.test.Project_06_CRUD_Employee_Spring_Data_JPA_REST;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class CrudEmployeeSpringDataJPAApplication {
+public class CrudEmployeeSpringDataJPARestApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CrudEmployeeSpringDataJPAApplication.class, args);
+        SpringApplication.run(CrudEmployeeSpringDataJPARestApplication.class, args);
     }
 
     @Bean

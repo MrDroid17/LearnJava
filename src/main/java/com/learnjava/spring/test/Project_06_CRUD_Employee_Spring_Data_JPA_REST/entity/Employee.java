@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.Project_05_CRUD_Employee_Spring_data_JPA.entity;
+package com.learnjava.spring.test.Project_06_CRUD_Employee_Spring_Data_JPA_REST.entity;
 
 import jakarta.persistence.*;
 
