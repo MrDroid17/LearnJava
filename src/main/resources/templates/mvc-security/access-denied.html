@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Access denied</title>
+
+    <style>
+        .failed {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<h3 class="failed">Access Denied</h3>
+
+<p class="failed">You are not authorized to access this page</p>
+
+<hr>
+<br>
+<a th:href="@{/}">back to Home Page</a>
+
+
+</body>
+</html>

@@ -11,4 +11,15 @@ public class DemoController {
         return "mvc-security/home";
     }
 
+    @GetMapping("/leaders")
+    public String showLeaders(){
+        return "mvc-security/leaders";
+    }
+
+    @GetMapping("/systems")
+    public String showSystem(){
+        return "mvc-security/systems";
+    }
+
+
 }
