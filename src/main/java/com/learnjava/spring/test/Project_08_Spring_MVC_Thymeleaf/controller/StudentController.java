@@ -30,14 +30,14 @@ public class StudentController {
         theModel.addAttribute("languages", languages);
         theModel.addAttribute("systems", systems);
 
-        return "student-form";
+        return "student/student-form";
 
     }
 
     @PostMapping("/processStudentForm")
     public String processForm(@ModelAttribute("student") Student student){
         System.out.printf("the student "+ student.getFirstName() + " " + student.getLastName());
-        return "student-confirmation";
+        return "student/student-confirmation";
 
     }
 }

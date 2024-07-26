@@ -28,7 +28,7 @@ public class CustomerController {
     public String customerForm(Model model){
         model.addAttribute("customer", new Customer());
 
-        return "customer-form";
+        return "customer/customer-form";
 
     }
 
@@ -40,7 +40,7 @@ public class CustomerController {
 
         System.out.println("Binding result : "+ bindingResult.toString());
 
-        return bindingResult.hasErrors() ? "customer-form" : "customer-confirmation";
+        return bindingResult.hasErrors() ? "customer/customer-form" : "customer/customer-confirmation";
 
     }
 }
