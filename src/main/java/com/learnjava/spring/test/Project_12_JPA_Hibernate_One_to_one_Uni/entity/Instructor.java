@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.Project_12_JPA_Hibernate_Advanced_Mapping.entity;
+package com.learnjava.spring.test.Project_12_JPA_Hibernate_One_to_one_Uni.entity;
 
 import jakarta.persistence.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class Instructor {
     private String email;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "instuctor_detail_id")
+    @JoinColumn(name = "instructor_detail_id")
     private InstructorDetail instructorDetail;
 
     public Instructor() {

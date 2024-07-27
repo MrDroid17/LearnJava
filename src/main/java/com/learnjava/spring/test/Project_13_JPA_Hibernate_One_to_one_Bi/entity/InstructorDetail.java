@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.Project_12_JPA_Hibernate_Advanced_Mapping.entity;
+package com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.entity;
 
 import jakarta.persistence.*;
 import org.springframework.beans.factory.annotation.Autowired;

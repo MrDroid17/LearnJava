@@ -1,13 +1,13 @@
-package com.learnjava.spring.test.Project_12_JPA_Hibernate_Advanced_Mapping.dao;
+package com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.dao;
 
-import com.learnjava.spring.test.Project_12_JPA_Hibernate_Advanced_Mapping.entity.Instructor;
+import com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.entity.Instructor;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-public class InstructorDaoImpl implements InstructorDao{
+public class InstructorDaoImpl implements InstructorDao {
 
     private EntityManager entityManager;
 
@@ -24,5 +24,17 @@ public class InstructorDaoImpl implements InstructorDao{
     @Transactional
     public void save(Instructor instructor) {
         entityManager.persist(instructor);
+    }
+
+    @Override
+    public Instructor findInstructorById(int id) {
+        return entityManager.find(Instructor.class, id);
+    }
+
+    @Override
+    @Transactional
+    public void deleteInstructorById(int id) {
+        Instructor instructor = entityManager.find(Instructor.class, id);
+        entityManager.remove(instructor);
     }
 }

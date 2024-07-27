@@ -1,6 +1,5 @@
 package com.learnjava.spring.test.Project_11_Spring_MVC_Security;
 
-import com.learnjava.spring.test.Project_10_Spring_MVC_CRUD.SpringMVCDatabaseCRUDwithThymeleaf;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
