@@ -1,7 +1,7 @@
-package com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.dao;
+package com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.dao;
 
-import com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.entity.Instructor;
-import com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.entity.InstructorDetail;
+import com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.entity.Instructor;
+import com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.entity.InstructorDetail;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

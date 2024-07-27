@@ -1,17 +1,17 @@
-package com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi;
+package com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many;
 
-import com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.dao.InstructorDao;
-import com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.entity.Instructor;
-import com.learnjava.spring.test.Project_13_JPA_Hibernate_One_to_one_Bi.entity.InstructorDetail;
+import com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.dao.InstructorDao;
+import com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.entity.Instructor;
+import com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.entity.InstructorDetail;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class JPAHibernateOneToOneBi {
+public class JPAHibernateOneToMany {
     public static void main(String[] args) {
-        SpringApplication.run(JPAHibernateOneToOneBi.class, args);
+        SpringApplication.run(JPAHibernateOneToMany.class, args);
     }
 
     @Bean

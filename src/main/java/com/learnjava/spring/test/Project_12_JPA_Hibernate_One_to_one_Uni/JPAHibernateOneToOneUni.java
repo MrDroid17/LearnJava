@@ -42,7 +42,7 @@ public class JPAHibernateOneToOneUni {
     }
 
     public void deleteInstructor(InstructorDao dao){
-        int id =3;
+        int id =3 ;
         dao.deleteInstructorById(id);
         System.out.println("Instructor deleted.");
 
