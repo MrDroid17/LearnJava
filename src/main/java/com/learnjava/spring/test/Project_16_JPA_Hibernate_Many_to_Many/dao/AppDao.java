@@ -3,6 +3,7 @@ package com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.dao;
 import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.Course;
 import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.Instructor;
 import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.InstructorDetail;
+import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.Student;
 
 import java.util.List;
 
@@ -33,5 +34,13 @@ public interface AppDao {
     void save(Course course);
 
     Course findCourseAndReviewByCourseId(int id);
+
+    Course findCourseAndStudentByCourseId(int id);
+
+    Student findStudentAndCourseByStudentId(int id);
+
+    void update(Student student);
+
+    void deleteStudentById(int id);
 
 }

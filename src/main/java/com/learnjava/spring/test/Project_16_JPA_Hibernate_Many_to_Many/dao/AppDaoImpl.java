@@ -3,6 +3,7 @@ package com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.dao;
 import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.Course;
 import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.Instructor;
 import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.InstructorDetail;
+import com.learnjava.spring.test.Project_16_JPA_Hibernate_Many_to_Many.entity.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -125,5 +126,40 @@ public class AppDaoImpl implements AppDao {
         query.setParameter("data", id);
 
         return query.getSingleResult();
+    }
+
+    @Override
+    public Course findCourseAndStudentByCourseId(int id) {
+
+        TypedQuery<Course> query = entityManager.createQuery("select c from Course c "
+                                                                + "JOIN FETCH c.students "
+                                                                +" where c.id= :data", Course.class);
+        query.setParameter("data", id);
+
+        return query.getSingleResult();
+    }
+
+    @Override
+    public Student findStudentAndCourseByStudentId(int id) {
+        TypedQuery<Student> query = entityManager.createQuery("select s from Student s "
+                                                                + "JOIN FETCH s.courses "
+                                                                +" where s.id= :data", Student.class);
+        query.setParameter("data", id);
+
+        return query.getSingleResult();
+    }
+
+    @Override
+    @Transactional
+    public void update(Student student) {
+        entityManager.merge(student);
+    }
+
+    @Override
+    @Transactional
+    public void deleteStudentById(int id) {
+        Student student = entityManager.find(Student.class, id);
+        entityManager.remove(student);
+
     }
 }
