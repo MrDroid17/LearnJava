@@ -3,6 +3,9 @@ package com.learnjava.spring.test.Project_14_JPA_Hibernate_One_to_Many.entity;
 import jakarta.persistence.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "instructor")
 public class Instructor {
@@ -23,6 +26,11 @@ public class Instructor {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "instructor_detail_id")
     private InstructorDetail instructorDetail;
+
+    @OneToMany(mappedBy = "instructor",
+            fetch = FetchType.LAZY,
+            cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private List<Course> courses;
 
     public Instructor() {
     }
@@ -72,6 +80,27 @@ public class Instructor {
 
     public void setInstructorDetail(InstructorDetail instructorDetail) {
         this.instructorDetail = instructorDetail;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
+
+    /**
+     * Add a Convenience method for Bi-directional relationship
+     * @param course
+     */
+    public void add(Course course){
+        if(courses == null){
+            courses = new ArrayList<>();
+        }
+
+        courses.add(course);
+        course.setInstructor(this);
     }
 
     @Override
