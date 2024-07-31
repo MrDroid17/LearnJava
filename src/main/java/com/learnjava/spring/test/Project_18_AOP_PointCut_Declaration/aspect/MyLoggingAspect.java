@@ -1,4 +1,4 @@
-package com.learnjava.spring.test.Project_17_AOP.aspect;
+package com.learnjava.spring.test.Project_18_AOP_PointCut_Declaration.aspect;
 
 
 import org.aspectj.lang.annotation.Aspect;
@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class MyLoggingAspect {
-
 //    @Before("execution(public void addAccount())")
 //    @Before("execution(public void com.learnjava.spring.test.Project_17_AOP.dao.AccountDao.addAccount())")
 //    @Before("execution(public void com.learnjava.spring.test.Project_17_AOP.dao.MembershipDao.addAccount())")
