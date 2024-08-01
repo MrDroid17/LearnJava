@@ -7,6 +7,8 @@ import java.util.List;
 public interface AccountDao {
 
     List<Account> findAccount();
+
+    List<Account> findAccount(boolean tripWire);
     void addAccount(Account account, boolean vip);
 
     boolean addSillyAccount();
