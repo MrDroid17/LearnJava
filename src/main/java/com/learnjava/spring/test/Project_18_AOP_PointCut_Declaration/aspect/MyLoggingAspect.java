@@ -1,21 +1,47 @@
 package com.learnjava.spring.test.Project_18_AOP_PointCut_Declaration.aspect;
 
 
+import com.learnjava.spring.test.Project_18_AOP_PointCut_Declaration.Account;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
+@Order(1)
 public class MyLoggingAspect {
-//    @Before("execution(public void addAccount())")
-//    @Before("execution(public void com.learnjava.spring.test.Project_17_AOP.dao.AccountDao.addAccount())")
-//    @Before("execution(public void com.learnjava.spring.test.Project_17_AOP.dao.MembershipDao.addAccount())")
-//    @Before("execution(public void add*())")
-//    @Before("execution(*add*())") // return type to all *
-//    @Before("execution(* add*(com.learnjava.spring.test.Project_17_AOP.Account))") // return type to all *
-    @Before("execution(* com.learnjava.spring.test.Project_17_AOP.dao.*.*(..))") // for diff no of argument use (..) , match for any parameter and all method
-    public void beforeAddAccountAdvice(){
-        System.out.println("\n ========> Executing @Before advice on add Account");
-    }
+
+    /**
+     * Using Pointcut declaration
+     */
+    @Before("com.learnjava.spring.test.Project_18_AOP_PointCut_Declaration.aspect.AOP_PointCutExpression.forDaoPackageNoGetterSetter()")
+    public void beforeAddAccountAdvice(JoinPoint joinPoint){
+        System.out.println("========> Executing Logging advice...");
+
+        /**
+         * JoinPoint
+         */
+        MethodSignature methodSignature = (MethodSignature)  joinPoint.getSignature();
+        System.out.println("Method : =====> :" +methodSignature);
+
+        Object[] args= joinPoint.getArgs();
+
+        for(Object  arg: args){
+            System.out.println(arg);
+
+            if(arg instanceof Account){
+                Account account = (Account) arg;
+
+                System.out.println("Account first name: " + account.getFirstName());
+                System.out.println("Account last name: " + account.getLastName());
+            }
+        }
+     }
+
+
+
 }

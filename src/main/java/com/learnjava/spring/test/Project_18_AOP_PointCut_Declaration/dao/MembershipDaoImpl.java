@@ -6,11 +6,11 @@ import org.springframework.stereotype.Repository;
 public class MembershipDaoImpl implements MembershipDao {
     @Override
     public void addAccount() {
-        System.out.println(getClass().getSimpleName() + "----->  : Doing DB work : Adding a Membership ...");
+        System.out.println(getClass().getSimpleName() + "----->  : Doing DB work : Adding a Membership ...\n");
     }
 
     @Override
     public void goToSleep() {
-        System.out.println(getClass().getSimpleName() + "----->  : Doing DB work : I am going to sleep ...");
+        System.out.println(getClass().getSimpleName() + "----->  : Doing DB work : I am going to sleep ...\n");
     }
 }
